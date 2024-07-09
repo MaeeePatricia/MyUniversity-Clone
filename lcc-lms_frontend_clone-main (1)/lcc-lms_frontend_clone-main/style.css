@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+    /* outline: 1px solid red; */
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --subheading-color: #1E0E57;
+    --light-grey-text-color: #424040;
+    --lighter-grey-text-color: #707070;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    height: 7.5rem;
+    position: fixed;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    z-index: 100;
+}
+
+.header-left {
+    width: 35em;
+    height: 100%;
+    margin-left: 2.8em;
+    display: flex;
+}
+
+.logo {
+    width: 5em;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 5.2em;
+    cursor: pointer;
+}
+
+a.lms-name, a.about-name {
+    color: var(--light-grey-text-color);
+    transition: color 0.1s;
+}
+
+.lms-name:hover {
+    color: var(--lighter-grey-text-color);
+}
+
+.name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+    font-weight: 300;
+    color: var(--light-grey-text-color);
+}
+
+.header-right {
+    width: 25em;
+    height: 100%;
+    margin-right: 2.8em;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.about {
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--light-grey-text-color);
+    transition: background-color 0.1s;
+}
+
+.about:hover {
+    background-color: rgba(112, 112, 112, 0.05);
+}
+
+.log-in {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+}
+
+
+.button {
+    padding: 0.3em 0.7em;
+    font-size: 1.7em;
+    font-weight: 300;
+    color: var(--bg-color);
+    background-color: #5c5f5f;
+    border-radius: 5em;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.content-banner {
+    height: 87.5vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+    position: relative;
+}
+
+.content-banner img {
+    width: 100%;
+    height: 86em;
+}
+
+.content-banner .caption {
+    margin-left: 12.75em;
+    font-family: 'RobotoRegularNew', helvetica, arial, sans-serif;
+    position: absolute;
+    color: var(--bg-color);
+    top: 30.8em;
+
+}
+
+.caption h2 {
+    font-size: 3.78em;
+    font-weight: 400;
+}
+
+.caption p {
+    margin: 0.8em 0;
+    font-size: 1.9em;
+    font-weight: 100;
+    max-width: 15em;
+    line-height: 1.3em;
+}
+
+.program {
+    height: 106em;
+}
+
+.program .course {
+    height: 100%;
+    padding: 6.5em 10.55em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.course > div {
+    margin: 2.5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.course > div p{
+    margin: 0.5em;
+}
+
+.course-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.2em;
+}
+
+.course-img img {
+    width: 60%;
+}
+
+.course .caption1 {
+    margin-bottom: 1em;
+    font-size: 1.55em;
+}
+
+.course .caption2 {
+    font-weight: 200;
+    color: #302e2e;
+    line-height: 1.5em;
+    height: 7em;
+    font-size: 1.58em;
+}
+
+.course-button {
+    margin-top: 0.65em;
+    margin-bottom: 1.15em;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.course-button:hover {
+    opacity: 0.7;
+}
+
+.course-button a{
+    background-color: #21416b;
+    padding: 0.7em 1.2em;
+    color: var(--bg-color);
+    font-size: 1.57em;
+    font-weight: 200;
+    border-radius: 1.2em;
+}
+
+.course4 .caption2,  .course7 .caption2{
+    height: 5.8em;
+}
+
+footer {
+    height: 17vh;
+    background-color: #919191;
+    padding: 2em;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: end;
+}
+
+.footer-right {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-right-social {
+    display: flex;
+}
+
+.footer-right-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.2em;
+  height: 4.2em;
+  background-color: var(--bg-color);
+  margin: 0 0.7em;
+  border-radius: 2em;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.footer-right-social a i {
+    font-size: 2.5em;
+    color: #605d5d;;
+    transition: color 0.1s ease-in-out;
+}
+
+.footer-right-social a:hover {
+    background-color: #696666;
+}
+
+.footer-right-social a:hover i {
+    color: var(--bg-color);
+}
+
+.footer-right-language {
+    background-color: var(--bg-color);
+    color: #605d5d;
+    font-size: 1.5em;
+    font-weight: 200;
+    width: 7.2em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 1.1em;
+}
